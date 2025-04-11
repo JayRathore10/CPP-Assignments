@@ -1,7 +1,3 @@
-/*
-Write a class Employee with private attributes name, position, and salary, and public 
-methods to display employee details.
-*/
 
 #include<iostream>
 using namespace std;
