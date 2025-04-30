@@ -8,28 +8,29 @@ public:
 	}
 };
 
-class child1 : public Parent{
+class child1{
 public:
-	void name(){
+	void name1(){
 		cout<<"Child 1"<<" ";
 	}
 };
 
-class child2 : public Parent{
+class child2 {
 public:
-	void name(){
+	void name2(){
 		cout<<"Child 2"<<" ";
 	}
 };
 
+
+class Child : public Parent  , public child1 , public child2{
+
+};
+
 int main(){
-	child1 c1;
-	child2 c2;
-
-	c1.name();
+	Child c1;
+	c1.name1();;
+	c1.name2();
 	c1.surname();
-
-	c2.name();
-	c2.surname();
 	return 0;
 }
