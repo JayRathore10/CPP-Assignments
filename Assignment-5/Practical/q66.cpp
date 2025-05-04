@@ -13,5 +13,6 @@ int main(){
     while(getline(file , l)){
         cout<<l<<endl;
     }
+    file.close();
     return 0;
 }
